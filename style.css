@@ -38,6 +38,10 @@ nav {
   flex-wrap: wrap;
 }
 
+nav a:focus {
+  outline: 0.2125rem solid #e21f;
+}
+
 nav a {
   display: flex;
   flex-wrap: wrap;
@@ -124,6 +128,10 @@ button {
   cursor: pointer;
 }
 
+button:focus {
+  outline: 0.3rem solid #000000;
+}
+
 button:hover {
   background-color: #900;
 }
@@ -159,6 +167,10 @@ li img {
 
 .feature:hover {
   border-left-color: #e21;
+}
+
+.feature:focus {
+  outline: 0.5625rem solid #e21;
 }
 
 .feature p {
