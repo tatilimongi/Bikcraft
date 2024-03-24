@@ -182,7 +182,6 @@ li img {
   border-style: solid;
   border-color: transparent;
   border-width: 0.5625rem;
-  border-radius: -0.3125rem;
 }
 
 .feature:hover {
@@ -251,14 +250,9 @@ footer:focus {
     object-position: top center;
   }
 
-  .description {
-    text-wrap: wrap;
-  }
-
   h2 {
     grid-column: span 2;
     text-align: center;
-    text-wrap: wrap;
     padding-left: 15%;
     padding-right: 15%;
     background: #f7f7f7;
