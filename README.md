@@ -4,6 +4,12 @@
 
 This repository contains the code for Bikcraft, a project focused on demonstrating responsiveness and accessibility principles in web design.
 
+## CSS Validation
+
+The CSS code in this project has been validated according to the standards set by the W3C CSS Validator. You can verify the validity of the CSS by clicking on the badge below:
+
+[![Valid CSS](https://jigsaw.w3.org/css-validator/images/vcss)](https://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fbikcraft-accessibility-project.netlify.app%2F&usermedium=all&vextwarning=&warning=1)
+
 ## Accessibility Features
 
 - **Semantic HTML Elements**: Implemented semantic elements like `<header>`, `<nav>`, `<main>`, and `<footer>` for better accessibility and screen reader compatibility.
