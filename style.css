@@ -211,6 +211,16 @@ footer:focus {
   outline: 0.3rem solid #e21;
 }
 
+.w3c {
+  position: absolute;
+  bottom: 0.625rem;
+  right: 0.625rem;
+}
+
+.w3c_image:focus {
+  outline: 0.3rem solid #e21;
+}
+
 /* ------ Responsive Design ------ */
 @media only screen and (max-width: 1000px) {
   * {
