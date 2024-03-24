@@ -1,0 +1,285 @@
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0rem;
+  gap: 3.75rem;
+  margin-top: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ------ Header ------ */
+.title {
+  max-height: 3.125rem;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0rem;
+}
+
+header {
+  display: flex;
+  gap: 3.75rem;
+  flex-direction: column;
+}
+
+nav {
+  margin: 0.625rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.9375rem 1.875rem;
+  text-decoration: none;
+  color: black;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  border-width: 0.2125rem;
+  border-color: transparent;
+  border-style: solid;
+}
+
+nav a:hover {
+  border-color: #e21;
+}
+
+ul {
+  list-style: none;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+nav ul {
+  gap: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ------ Main ------ */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 62.5rem;
+  background: #fff;
+}
+
+h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  padding: 2.5rem;
+  align-self: center;
+}
+
+h1::before {
+  content: "";
+  display: block;
+  width: 3.75rem;
+  height: 0.25rem;
+  background: #e21;
+  position: absolute;
+  top: 1.875rem;
+  right: -1.875rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description {
+  padding: 2.5rem;
+  text-align: right;
+  position: relative;
+  display: grid;
+  gap: 1.25rem;
+  align-content: center;
+  justify-items: end;
+}
+
+button {
+  padding: 0.875rem 1.25rem;
+  width: fit-content;
+  color: white;
+  background-color: #ee2211;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  border-color: #ffffff00;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #900;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+li img {
+  min-width: max-content;
+}
+
+.features {
+  display: grid;
+  grid-column: 2/3;
+  padding: 3.125rem;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1.25rem;
+  gap: 1.25rem;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0.5625rem;
+  border-radius: -0.3125rem;
+}
+
+.feature:hover {
+  border-left-color: #e21;
+}
+
+.feature p {
+  grid-column: 3/2;
+}
+
+/* ------ Footer ------ */
+footer {
+  background-color: white;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-top: 1.875rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+/* ------ Responsive Design ------ */
+@media only screen and (max-width: 1000px) {
+  * {
+    margin: 0;
+    padding: 0;
+
+    max-width: 100%;
+  }
+
+  body {
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  header {
+    gap: 1.5rem;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  nav a {
+    padding: 0.75rem 1.25rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  img {
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  .description {
+    text-wrap: wrap;
+  }
+
+  h2 {
+    grid-column: span 2;
+    text-align: center;
+    text-wrap: wrap;
+    padding-left: 15%;
+    padding-right: 15%;
+    background: #f7f7f7;
+    max-width: 100%;
+  }
+
+  .features {
+    grid-column: 1/3;
+    padding: 1.5rem;
+  }
+
+  .feature {
+    background: #f7f7f7;
+  }
+
+  .feature p {
+    grid-column: 2/3;
+    margin-top: 1rem;
+  }
+
+  footer {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    gap: 1.875rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1::before {
+    display: none;
+  }
+
+  .description {
+    padding: 1.5rem;
+    text-align: left;
+    justify-items: start;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
