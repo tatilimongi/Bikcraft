@@ -320,6 +320,13 @@ footer:focus {
   }
 }
 
+@media (width <= 500px) {
+  footer {
+    text-align: start;
+    padding-left: 1.5rem;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   h2 {
     font-size: 2rem;
