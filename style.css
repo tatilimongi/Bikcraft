@@ -82,6 +82,7 @@ main {
   grid-template-columns: 1fr 1fr;
   max-width: 62.5rem;
   background: #fff;
+  min-height: 100vh;
 }
 
 h2 {
