@@ -71,6 +71,7 @@ nav li {
 nav li:hover {
   transform: scale(1.05);
   border-color: #e21;
+  box-shadow: -0.5em 1em 0.4em #00000033;
 }
 
 ul {
@@ -158,6 +159,7 @@ button:focus {
 button:hover {
   background-color: #900;
   transform: scale(1.05);
+  box-shadow: -0.5em 1em 0.4em #00000033;
 }
 
 img {
@@ -206,6 +208,7 @@ li img {
 .feature:hover {
   border-left-color: #e21;
   transform: scale(1.05);
+  box-shadow: -1em 1em 0.4em #00000033;
 }
 
 .feature:focus {
